@@ -147,21 +147,23 @@ body {
         z-index: 1;
     }
     .section1a {
-        transform: translate(-1000px, 400px); /* dưới trái */
         transition: transform 1.2s ease-out, opacity 0.8s ease;
         z-index: 2;             
         position: absolute;
         opacity: 1;
         transition: all 1.2s ease-out;
+         transform: translate(-120vw, 40vh);
     }
     .flight {
         opacity: 1;
-        transform: translate(900px, -900px); /* trên phải */
+        transform: translate(120vw, -40vh);
     }
     img {
-        width: 740px;
+        width: 100%;
     }
+
 }
+
 
 
 @media only screen and (max-width: 750px) {
@@ -212,19 +214,26 @@ body {
     .section1, .section2, .section3, .section4 {
         opacity: 0;
         transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .from-right {
         transform: translateX(200px);
+        margin: 0 auto;
     }
 
     .from-left {
         transform: translateX(-200px);
+        margin: 0 auto;
     }
 
     .show {
         opacity: 1;
         transform: translateX(0);
+        margin: 0 auto;
     }
     .section1 {
         z-index: 1;
@@ -240,6 +249,6 @@ body {
         opacity: 1;
     }
     img {
-        width: 320px;
+        width: 95%;
     }
 }
